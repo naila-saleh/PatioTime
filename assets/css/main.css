@@ -10,25 +10,47 @@ a{
     color: var(--white);
     text-decoration: none;
 }
+body{
+    background-color: var(--black);
+    font-family: var(--mainfont);
+}
+/* start header */
 .header{
     background-size: cover;
     height: 100vh;
-    width: 100vw;
     background-blend-mode: darken;
     background: rgba(0, 0, 0, 0.6) url("../images/main_page_background1.jpg") no-repeat center 65%;
 }
-.header{
+.header .header-info, .header .navbar, .header button{
     font-family: var(--secondfont);
 }
-.header .navbar a:hover{
-
+.header .navbar a{
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+.header .navbar a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--maincolor);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+}
+.header .navbar a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
 }
 .header h1{
     font-size: 72px;
     font-weight: lighter;
     letter-spacing: 0.1em;
     margin-top: 10%;
-    font-family: var(--mainfont);
 }
 @media (max-width: 1200px) {
     .header h1{
@@ -44,7 +66,7 @@ a{
     .header h1{
         font-size: 32px;
     }
-    .header .header-section1{
+    .header .header-info{
         display: none;
     }
 }
@@ -81,6 +103,7 @@ a{
     color: var(--maincolor);
     background-color: transparent;
     border: 2px solid var(--maincolor);
+    transition: all 0.3s;
 }
 .header .button_menu button:hover{
     color: var(--black);
@@ -91,3 +114,60 @@ a{
         padding: 7px 15px !important;
     }
 }
+/* end header */
+
+/* start footer */
+.footer{
+    letter-spacing: 1.5px;
+}
+.footer .nav-footer .nav-item h2{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.footer .nav-footer .nav-item address, .footer .nav-footer .nav-item a{
+    font-family: var(--secondfont);
+    font-size: 15px;
+}
+.footer .nav-footer .nav-item a{
+    transition: all 0.5s;
+}
+.footer .nav-footer .nav-item a:hover{
+    color: var(--maincolor);
+}
+.footer .nav-footer .nav-item .reserve{
+    /*text-decoration: underline var(--maincolor) 2px;
+    text-underline-offset: 7px;*/
+    text-decoration: none;
+    position: relative;
+}
+.footer .nav-footer .nav-item .reserve::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--maincolor);
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+}
+.footer .nav-footer .nav-item .reserve:hover::after{
+    transform: scaleX(0);
+    transform-origin: right;
+}
+.footer .nav-footer .nav-item .reserve:not(:hover)::after{
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+}
+.footer .nav-footer .nav-item a svg{
+    width: 25px;
+    height: 25px;
+    fill: var(--white);
+    transition: all 0.5s;
+}
+.footer .nav-footer .nav-item a svg:hover{
+    fill: var(--maincolor);
+}
+/* end footer */
