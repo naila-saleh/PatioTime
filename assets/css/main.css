@@ -167,4 +167,18 @@
 .footer .elementor-section a:hover{
     color: var(--maincolor);
 }
+@media screen and (max-width: 991.5px) {
+    .footer .elementor-section{
+        text-align: center;
+    }
+    .footer .elementor-section .privacy-policy{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .footer .elementor-section .elementor-link{
+        margin-bottom: 10px;
+    }
+}
 /* end footer */
