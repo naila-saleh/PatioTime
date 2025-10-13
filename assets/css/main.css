@@ -1,19 +1,3 @@
-:root{
-    --maincolor : #C3985F;
-    --white : #fff;
-    --black : #000;
-    --mainfont : "Cormorant Garamond", serif;
-    --secondfont : "Jost", sans-serif;
-    --shadowWhite : rgba(255, 255, 255, 0.8);
-}
-a{
-    color: var(--white);
-    text-decoration: none;
-}
-body{
-    background-color: var(--black);
-    font-family: var(--mainfont);
-}
 /* start header */
 .header{
     background-size: cover;
@@ -34,8 +18,8 @@ body{
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 7%;
+    width: 86%;
     height: 2px;
     background-color: var(--maincolor);
     transform: scaleX(0);
@@ -79,7 +63,7 @@ body{
         display: none;
     }
 }
-.header .nav-item .active{
+.header .navbar .nav-item .active{
     text-decoration: underline var(--maincolor) 2px;
     text-underline-offset: 7px;
 }
@@ -118,7 +102,7 @@ body{
 
 /* start footer */
 .footer{
-    letter-spacing: 1.5px;
+    letter-spacing: 1.1px;
 }
 .footer .nav-footer .nav-item h2{
     font-size: 16px;
@@ -126,7 +110,9 @@ body{
 }
 .footer .nav-footer .nav-item address, .footer .nav-footer .nav-item a{
     font-family: var(--secondfont);
-    font-size: 15px;
+    font-size: 14px;
+    color: var(--white2);
+    font-weight: 500;
 }
 .footer .nav-footer .nav-item a{
     transition: all 0.5s;
@@ -164,10 +150,21 @@ body{
 .footer .nav-footer .nav-item a svg{
     width: 25px;
     height: 25px;
-    fill: var(--white);
+    fill: var(--shadowWhite);
     transition: all 0.5s;
 }
 .footer .nav-footer .nav-item a svg:hover{
     fill: var(--maincolor);
+}
+.footer .elementor-section{
+    font-family: var(--secondfont);
+    font-size: 13px;
+    color: var(--shadowWhite);
+}
+.footer .elementor-section a{
+    transition: all 0.5s;
+}
+.footer .elementor-section a:hover{
+    color: var(--maincolor);
 }
 /* end footer */
