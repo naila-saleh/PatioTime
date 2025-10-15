@@ -6,6 +6,7 @@
     --mainfont : "Cormorant Garamond", serif;
     --secondfont : "Jost", sans-serif;
     --shadowWhite : rgba(255, 255, 255, 0.8);
+    --shadowBlack : rgba(0, 0, 0, 0.8);
 }
 a{
     color: var(--white);
