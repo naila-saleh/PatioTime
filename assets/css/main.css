@@ -3,7 +3,7 @@
     background-size: cover;
     height: 100vh;
     background-blend-mode: darken;
-    background: rgba(0, 0, 0, 0.6) url("../images/home-page/main_page_background1.jpg") no-repeat center 65%;
+    background: rgba(0, 0, 0, 0.6) url("../images/home-page/main_page_background1.webp") no-repeat center 65%;
 }
 .header .header-info, .header .navbar, .header button{
     font-family: var(--secondfont);
@@ -101,6 +101,7 @@
 /* end header */
 
 /* start main */
+/* start our-heritage */
 .main .our-heritage{
 
 }
@@ -114,6 +115,7 @@
 .main .our-heritage .our-heritage-description span{
     color: var(--maincolor);
     font-size: 14px;
+    font-weight: 700;
 }
 .main .our-heritage .our-heritage-description h2{
     font-size: 56px;
@@ -124,6 +126,7 @@
 }
 .main .our-heritage .our-heritage-description a{
     font-size: 13px;
+    font-weight: 700;
 }
 .main .our-heritage .our-heritage-description a:hover{
 }
@@ -180,9 +183,6 @@
     .main .our-heritage .our-heritage-description h2{
         font-size: 34px;
     }
-    .main .our-heritage .our-heritage-description p{
-        font-size: 14px;
-    }
     .main .our-heritage .our-heritage-description span{
         font-size: 11px;
     }
@@ -192,6 +192,49 @@
         font-size: 30px;
     }
 }
+/* end our-heritage */
+/* start make reservation */
+.main .make-reservation{
+    background-size: cover;
+    background-blend-mode: darken;
+    background: rgba(0, 0, 0, 0.6) url("../images/home-page/make-reservation.webp") no-repeat center 65%;
+}
+.main .make-reservation .stars{}
+.main .make-reservation h2{
+    font-size: 48px;
+    letter-spacing: 0.1em;
+}
+.main .make-reservation button, .main .make-reservation p{
+    font-family: var(--secondfont);
+    letter-spacing: 0.05em;
+}
+.main .make-reservation button{
+    border-radius: 0;
+    padding: 8px 30px;
+    font-size: 15px;
+}
+.main .make-reservation .button-book-table button{
+    color: var(--maincolor);
+    background-color: transparent;
+    border: 2px solid var(--maincolor);
+    transition: all 0.3s;
+}
+.main .make-reservation .button-book-table button:hover{
+    color: var(--black);
+    background-color: var(--maincolor);
+}
+@media (max-width: 598px) {
+    .main .make-reservation h2{
+        font-size: 36px;
+    }
+    .main .make-reservation .button-book-table button{
+        padding: 7px 15px !important;
+    }
+}
+.main .make-reservation p{
+    color: var(--white2);
+}
+/* end make reservation */
 /* end main */
 
 /* start footer */
