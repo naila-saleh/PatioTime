@@ -239,6 +239,30 @@
     }
 }
 /* end our-heritage */
+/* start menus */
+.main .menus{}
+.main .menus .menu{}
+.main .menus .menu a{
+    transition: all 0.5s;
+}
+.main .menus .menu a:hover{
+    color: var(--maincolor);
+}
+.main .menus .menu .menu-img{
+    transition: transform 0.3s ease-out;
+}
+.main .menus .menu .menu-img:hover{
+    transform: translateY(-8px);
+}
+.main .menus .menu .menu-img img{
+    border: 1px solid var(--maincolor);
+    border-radius: 5px;
+}
+.main .menus .menu h2{
+    font-size: 21px;
+    letter-spacing: 0.1em;
+}
+/* end menus */
 /* start make reservation */
 .main .make-reservation{
     background-size: cover;
@@ -298,10 +322,11 @@
     font-weight: 500;
 }
 .footer .nav-footer .nav-item a{
-    transition: all 0.5s;
+    transition: all 0.5s ease-out;
 }
 .footer .nav-footer .nav-item a:hover{
     color: var(--maincolor);
+    transform: scale(0.9);
 }
 .footer .nav-footer .nav-item .reserve{
     /*text-decoration: underline var(--maincolor) 2px;
