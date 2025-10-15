@@ -3,7 +3,7 @@
     background-size: cover;
     height: 100vh;
     background-blend-mode: darken;
-    background: rgba(0, 0, 0, 0.6) url("../images/main_page_background1.jpg") no-repeat center 65%;
+    background: rgba(0, 0, 0, 0.6) url("../images/home-page/main_page_background1.jpg") no-repeat center 65%;
 }
 .header .header-info, .header .navbar, .header button{
     font-family: var(--secondfont);
@@ -99,6 +99,100 @@
     }
 }
 /* end header */
+
+/* start main */
+.main .our-heritage{
+
+}
+.main .our-heritage .our-heritage-description{
+
+}
+.main .our-heritage .our-heritage-description span, .main .our-heritage .our-heritage-description p, .main .our-heritage .our-heritage-description a{
+    font-family: var(--secondfont);
+    letter-spacing: 0.05em;
+}
+.main .our-heritage .our-heritage-description span{
+    color: var(--maincolor);
+    font-size: 14px;
+}
+.main .our-heritage .our-heritage-description h2{
+    font-size: 56px;
+    letter-spacing: 0.1em;
+}
+.main .our-heritage .our-heritage-description p{
+    font-size: 18px;
+}
+.main .our-heritage .our-heritage-description a{
+    font-size: 13px;
+}
+.main .our-heritage .our-heritage-description a:hover{
+}
+.main .our-heritage .our-heritage-description .discover-more{
+    text-decoration: none;
+    position: relative;
+}
+.main .our-heritage .our-heritage-description .discover-more::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--maincolor);
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+}
+.main .our-heritage .our-heritage-description .discover-more:hover::after{
+    transform: scaleX(0);
+    transform-origin: right;
+}
+.main .our-heritage .our-heritage-description .discover-more:not(:hover)::after{
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+}
+.main .our-heritage .our-heritage-img{
+
+}
+.main .our-heritage .our-heritage-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width: 1399.5px) {
+    .main .our-heritage .our-heritage-description h2{
+        font-size: 46px;
+    }
+}
+@media screen and (max-width: 1199.5px) {
+    .main .our-heritage .our-heritage-description h2{
+        font-size: 38px;
+    }
+    .main .our-heritage .our-heritage-description p{
+        font-size: 16px;
+    }
+    .main .our-heritage .our-heritage-description span, .main .our-heritage .our-heritage-description a{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 439.5px) {
+    .main .our-heritage .our-heritage-description h2{
+        font-size: 34px;
+    }
+    .main .our-heritage .our-heritage-description p{
+        font-size: 14px;
+    }
+    .main .our-heritage .our-heritage-description span{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 343.5px) {
+    .main .our-heritage .our-heritage-description h2{
+        font-size: 30px;
+    }
+}
+/* end main */
 
 /* start footer */
 .footer{
