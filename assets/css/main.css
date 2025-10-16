@@ -223,7 +223,11 @@
     transition: transform 0.3s ease-out;
 }
 .main .our-heritage .our-heritage-img{
-
+    transform: translateY(0);
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: SlideUp;
+    animation-duration: 2s;
 }
 .main .our-heritage .our-heritage-img img{
     width: 100%;
@@ -332,7 +336,22 @@
 /* end quick overview */
 /* start menus */
 .main .menus{}
-.main .menus .menu{}
+.main .menus .menu{
+    transform: translateY(0);
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: SlideUp;
+    animation-duration: 2s;
+}
+.main .menus .menu:nth-child(2){
+    animation-delay: 0.2s;
+}
+.main .menus .menu:nth-child(3){
+    animation-delay: 0.4s;
+}
+.main .menus .menu:nth-child(4){
+    animation-delay: 0.6s;
+}
 .main .menus .menu a{
     transition: all 0.5s;
 }
@@ -370,6 +389,11 @@
     width: 100%;
     height: 500px;
     position: absolute;
+    transform: translateY(0);
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: SlideUp;
+    animation-duration: 2s;
 }
 .main .dining-experience .dining-experience-imgs .dining-experience-img img{
     border-radius: 5px;
@@ -381,6 +405,7 @@
 .main .dining-experience .dining-experience-imgs .dining-experience-img:nth-child(2){
     left: 20%;
     top: 0;
+    animation-delay: 0.5s;
 }
 .main .dining-experience .dining-experience-description{
     position: relative;
@@ -571,6 +596,11 @@
     background-repeat: no-repeat;
     height: 680px;
     width: 560px;
+    transform: translateY(0);
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: SlideUp;
+    animation-duration: 2s;
 }
 .main .restaurant-instructions .dress-code-col .dress-code{
     background-color: var(--shadowBlack2);
