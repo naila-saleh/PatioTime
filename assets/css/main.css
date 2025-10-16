@@ -40,9 +40,6 @@
     transform: scaleX(1);
     transform-origin: left;
 }
-.header .navbar .navbar-nav .dropdown-menu a svg{
-
-}
 @media (max-width: 768px) {
     .header-info{
         display: none;
@@ -54,8 +51,17 @@
     }
 }
 .header .navbar .nav-item .active{
-    text-decoration: underline var(--maincolor) 2px;
-    text-underline-offset: 7px;
+    position: relative;
+}
+.header .navbar .nav-item .active::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3.5px;
+    left: 8%;
+    width: 82%;
+    height: 2px;
+    background-color: var(--maincolor);
 }
 .header .nav-item a{
     color: var(--shadowWhite);
