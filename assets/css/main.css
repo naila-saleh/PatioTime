@@ -6,27 +6,42 @@
 }
 .header .main-navbar{
 }
-.header .navbar a{
+.header .navbar .navbar-nav a, .header .navbar .navbar-nav .dropdown-menu a{
     position: relative;
     display: inline-block;
     color: inherit;
     text-decoration: none;
 }
-.header .navbar a::after{
+.header .navbar .navbar-nav a::after{
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 7%;
-    width: 86%;
+    bottom: 4px;
+    left: 10%;
+    width: 80%;
     height: 2px;
     background-color: var(--maincolor);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s ease-out;
 }
-.header .navbar a:hover::after{
+.header .navbar .navbar-nav .dropdown-menu a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--maincolor);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+}
+.header .navbar .navbar-nav a:hover::after,.header .navbar .navbar-nav .dropdown-menu a:hover::after{
     transform: scaleX(1);
     transform-origin: left;
+}
+.header .navbar .navbar-nav .dropdown-menu a svg{
+
 }
 @media (max-width: 768px) {
     .header-info{
