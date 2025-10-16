@@ -63,7 +63,7 @@
     margin-top: -140px;
     padding: 260px;
     background-size: cover;
-    background: rgba(0, 0, 0, 0.6) url("./../images/home-page/main_page_background1.webp") no-repeat 60% 60%;
+    background: var(--shadowBlack2) url("./../images/home-page/main_page_background1.webp") no-repeat 60% 60%;
 }
 .main .hero-section h1{
     font-size: 72px;
@@ -333,11 +333,116 @@
     letter-spacing: 0.1em;
 }
 /* end menus */
+/* start restaurant instructions */
+.main .restaurant-instructions{}
+.main .restaurant-instructions .about-items{
+    position: relative;
+}
+.main .restaurant-instructions .about-items::before{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--maincolor);
+}
+.main .restaurant-instructions .about-items .about-item{
+    padding: 30px 10px;
+}
+.main .restaurant-instructions .about-items .about-item h2{
+    font-size: 25px;
+    letter-spacing: 0.2em;
+    color: var(--maincolor);
+}
+.main .restaurant-instructions .about-items .about-item address, .main .restaurant-instructions .about-items .about-item p, .main .restaurant-instructions .about-items .about-item a{
+    font-family: var(--secondfont);
+    letter-spacing: 0.02em;
+    color: var(--shadowWhite);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 5px;
+}
+.main .restaurant-instructions .about-items .about-item address{}
+.main .restaurant-instructions .about-items .about-item p{}
+.main .restaurant-instructions .about-items .about-item p a{
+    transition: all 0.5s;
+}
+.main .restaurant-instructions .about-items .about-item p a:hover{
+    color: var(--maincolor);
+}
+.main .restaurant-instructions .dress-code-col{
+    background-image: url("./../images/home-page/code-dress.webp");
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 680px;
+    width: 560px;
+}
+.main .restaurant-instructions .dress-code-col .dress-code{
+    background-color: var(--shadowBlack2);
+    border-radius: 5px;
+    border: 1px solid var(--maincolor);
+    width: 60%;
+    padding: 60px 40px;
+}
+.main .restaurant-instructions .dress-code-col .dress-code h2{
+    font-size: 25px;
+    letter-spacing: 0.2em;
+    color: var(--maincolor);
+}
+.main .restaurant-instructions .dress-code-col .dress-code p{
+    font-family: var(--secondfont);
+    letter-spacing: 0.05em;
+    color: var(--white2);
+}
+@media screen and (max-width: 1400px) {
+    .main .restaurant-instructions .dress-code-col{
+        width: 480px;
+        margin-left: 5px;
+    }
+    .main .restaurant-instructions .dress-code-col .dress-code{
+        width: 60%;
+        padding: 40px 20px;
+    }
+}
+@media screen and (max-width: 991.5px) {
+    .main .restaurant-instructions .row{
+        justify-content: center;
+    }
+    .main .restaurant-instructions .dress-code-col{
+        width: 100%;
+    }
+    .main .restaurant-instructions .dress-code-col .dress-code{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 766px) {
+    .main .restaurant-instructions .dress-code-col{
+        background-color: var(--shadowBlack2);
+    }
+}
+@media screen and (max-width: 576px) {
+    .main .restaurant-instructions .about-items::before{
+        width: 90%;
+        left: 5%;
+    }
+    .main .restaurant-instructions .about-items .about-item{
+        padding-left: 5%;
+    }
+    .main .restaurant-instructions .dress-code-col .dress-code{
+        width: 90%;
+    }
+}
+/* end restaurant instructions */
 /* start make reservation */
 .main .make-reservation{
     background-size: cover;
     background-blend-mode: darken;
-    background: rgba(0, 0, 0, 0.6) url("../images/home-page/make-reservation.webp") no-repeat center 65%;
+    background: var(--shadowBlack2) url("../images/home-page/make-reservation.webp") no-repeat center 65%;
 }
 .main .make-reservation .stars{}
 .main .make-reservation h2{
