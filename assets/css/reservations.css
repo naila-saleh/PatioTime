@@ -74,4 +74,168 @@
     }
 }
 /* end hero section */
+/* start reservation info */
+.main .reservation-info{
+    font-family: var(--secondfont);
+    padding: 100px 0;
+}
+.main .reservation-info .reservation-card{
+    border: 1px solid var(--maincolor);
+    border-radius: 5px;
+    padding: 70px 50px;
+    height: 590px;
+    position: relative;
+}
+.main .reservation-info .address-card::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("./../images/reservation-page/address-background.webp");
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.main .reservation-info .address-card:hover::after{
+    opacity: 0.3;
+    z-index: -1;
+}
+.main .reservation-info .online-reservation-card::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("./../images/reservation-page/online-reservation-background.webp");
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.main .reservation-info .online-reservation-card:hover::after{
+    opacity: 0.3;
+    z-index: -1;
+}
+.main .reservation-info .opening-hours-card::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("./../images/reservation-page/opening-hours-background.webp");
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.main .reservation-info .opening-hours-card:hover::after{
+    opacity: 0.3;
+    z-index: -1;
+}
+.main .reservation-info .reservation-card h2{
+    font-family: var(--mainfont);
+    color: var(--maincolor);
+    font-size: 25px;
+    letter-spacing: 0.16em;
+    font-weight: normal;
+}
+.main .reservation-info .reservation-card p, .main .reservation-info .reservation-card address, .main .reservation-info .reservation-card a{
+    letter-spacing: 0.02em;
+    color: var(--shadowWhite);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 5px;
+}
+.main .reservation-info .reservation-card .address{}
+.main .reservation-info .reservation-card .address address{}
+.main .reservation-info .reservation-card .contact{}
+.main .reservation-info .reservation-card .contact p{}
+.main .reservation-info .reservation-card .contact p a{}
+.main .reservation-info .reservation-card .discover-more{
+    text-decoration: none;
+    position: relative;
+}
+.main .reservation-info .reservation-card .discover-more::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--maincolor);
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+}
+.main .reservation-info .reservation-card .discover-more:hover::after{
+    transform: scaleX(0);
+    transform-origin: right;
+}
+.main .reservation-info .reservation-card .discover-more:not(:hover)::after{
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+}
+
+.main .reservation-info .reservation-card .online-reservation{
+    color: var(--maincolor);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+.main .reservation-info .reservation-card .book-table-title{
+    color: var(--white);
+    font-size: 42px;
+}
+.main .reservation-info .reservation-card .reservation-form{}
+.main .reservation-info .reservation-card .reservation-form .form-element{
+    border: none;
+    border-bottom: 1px solid var(--shadowWhite3) !important;
+    border-radius: 0;
+    padding-left: 0;
+}
+.main .reservation-info .reservation-card .reservation-form .form-element:focus{
+    box-shadow: none;
+    border-bottom: 1px solid var(--shadowWhite) !important;
+}
+.main .reservation-info .reservation-card .reservation-form .form-element option{
+    background-color: var(--black);
+}
+.main .reservation-info .reservation-card .reservation-form .form-submit{
+    background-color: var(--darkMaincolor);
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+    padding: 10px 30px;
+}
+.main .reservation-info .reservation-card .reservation-powered-by{
+    font-size: 14px;
+    color: var(--shadowWhite4);
+}
+
+.main .reservation-info .reservation-card .opening-hours{}
+.main .reservation-info .reservation-card .opening-hours h3{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+.main .reservation-info .reservation-card .opening-hours p{}
+.main .reservation-info .reservation-card .opening-hours span{}
+@media screen and (max-width: 1199.5px) {
+    .main .reservation-info .reservation-card .book-table-title{
+        font-size: 36px;
+    }
+}
+@media screen and (max-width: 575.5px) {
+    .main .reservation-info{
+        font-family: var(--secondfont);
+        padding: 50px 0;
+    }
+    .main .reservation-info .reservation-card{
+        height: 500px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .main .reservation-info .reservation-card{
+        padding: 50px 30px;
+    }
+    .main .reservation-info .reservation-card .book-table-title{
+        font-size: 30px;
+    }
+}
+/* end reservation info */
 /* end main */
