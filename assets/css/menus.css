@@ -1,0 +1,75 @@
+/* start main */
+/* start hero section */
+.main .hero-section{
+    background-blend-mode: darken;
+    height: 100vh;
+    margin-top: -140px;
+    padding: 260px;
+    background-size: cover;
+    background: var(--shadowBlack2) url("./../images/menus-page/menus-hero-background.webp") no-repeat 60% 60%;
+}
+.main .hero-section h1{
+    font-size: 72px;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+}
+.main .hero-section span{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--secondfont);
+    color: var(--white2);
+    letter-spacing: 0.05rem;
+}
+@media (max-width: 1372.5px) {
+    .main .hero-section{
+        padding: 190px;
+    }
+}
+@media (max-width: 1232.5px) {
+    .main .hero-section{
+        padding: 220px;
+    }
+    .main .hero-section h1{
+        font-size: 60px;
+    }
+}
+@media (max-width: 1155.5px) {
+    .main .hero-section{
+        padding: 220px 100px;
+    }
+}
+@media (max-width: 915px) {
+    .main .hero-section{
+        padding: 240px 50px;
+    }
+    .main .hero-section h1{
+        font-size: 50px;
+    }
+    .main .hero-section span {
+        font-size: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .main .hero-section{
+        margin-top: -90px;
+        padding: 240px 50px;
+    }
+    .main .hero-section h1{
+        font-size: 45px;
+    }
+}
+@media (max-width: 555px) {
+    .main .hero-section{
+        padding: 200px 20px;
+    }
+    .main .hero-section span {
+        font-size: 14px;
+    }
+}
+@media (max-width: 500px) {
+    .main .hero-section{
+        padding: 200px 0;
+    }
+}
+/* end hero section */
+/* end main */
