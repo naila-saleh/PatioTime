@@ -72,4 +72,43 @@
     }
 }
 /* end hero section */
+/* start restaurant history */
+.main .restaurant-history{
+    padding: 100px 0;
+}
+.main .restaurant-history h2{
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: var(--white2);
+}
+.main .restaurant-history p{
+    font-size: 18px;
+    color: var(--shadowWhite);
+    font-family: var(--secondfont);
+}
+.main .restaurant-history .our-heritage-img{
+    transform: translateY(0);
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: SlideUp;
+    animation-duration: 2s;
+}
+@media (max-width: 1200px) {
+    .main .restaurant-history h2{
+        font-size: 50px;
+    }
+}
+@media (max-width: 992px) {
+    .main .restaurant-history h2{
+        font-size: 40px;
+        letter-spacing: 0.07em;
+    }
+}
+@media (max-width: 505px) {
+    .main .restaurant-history h2{
+        font-size: 35px;
+    }
+}
+/* end restaurant history */
 /* end main */
