@@ -113,7 +113,7 @@
 /* end restaurant history */
 /* start restaurant medals */
 .main .restaurant-medals{
-    padding: 10px 0 100px 0;
+    padding: 10px 0;
 }
 .main .restaurant-medals .restaurant-medal{}
 .main .restaurant-medals .restaurant-medal .restaurant-medal-img{}
@@ -129,8 +129,82 @@
 }
 @media screen and (max-width: 767px){
     .main .restaurant-medals{
-        padding: 0 0 50px 0;
+        padding: 5px 0;
     }
 }
 /* end restaurant medals */
+/* start award-winning wines */
+.main .award-winning-wines{
+    padding: 100px 0;
+}
+.main .award-winning-wines .wines-images{}
+.main .award-winning-wines .wines-images .wines-image{}
+.main .award-winning-wines .wines-description{}
+.main .award-winning-wines .wines-description span, .main .award-winning-wines .wines-description p, .main .award-winning-wines .wines-description a{
+    font-family: var(--secondfont);
+    color: var(--shadowWhite);
+}
+.main .award-winning-wines .wines-description span{
+    letter-spacing: 0.05em;
+    color: var(--maincolor);
+    font-size: 14px;
+    font-weight: 600;
+}
+.main .award-winning-wines .wines-description h2{
+    font-size: 56px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    color: var(--white2);
+}
+.main .award-winning-wines .wines-description p{
+    font-size: 18px;
+}
+.main .award-winning-wines .wines-description a{
+    font-size: 13px;
+    font-weight: 500;
+}
+.main .award-winning-wines .wines-description .discover-more{
+    text-decoration: none;
+    position: relative;
+}
+.main .award-winning-wines .wines-description .discover-more::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--maincolor);
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+}
+.main .award-winning-wines .wines-description .discover-more:hover::after{
+    transform: scaleX(0);
+    transform-origin: right;
+}
+.main .award-winning-wines .wines-description .discover-more:not(:hover)::after{
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+}
+@media screen and (max-width: 1200px) {
+    .main .award-winning-wines .wines-description h2{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .main .award-winning-wines{
+        padding: 50px 0;
+    }
+    .main .award-winning-wines .wines-description h2{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .main .award-winning-wines .wines-description h2{
+        font-size: 28px;
+    }
+}
+/* end award-winning wines */
 /* end main */
