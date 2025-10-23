@@ -111,4 +111,26 @@
     }
 }
 /* end restaurant history */
+/* start restaurant medals */
+.main .restaurant-medals{
+    padding: 10px 0 100px 0;
+}
+.main .restaurant-medals .restaurant-medal{}
+.main .restaurant-medals .restaurant-medal .restaurant-medal-img{}
+.main .restaurant-medals .restaurant-medal h2{
+    font-size: 26px;
+    color: var(--white2);
+    letter-spacing: 0.05em;
+}
+.main .restaurant-medals .restaurant-medal p{
+    font-size: 16px;
+    font-family: var(--secondfont);
+    color: var(--shadowWhite);
+}
+@media screen and (max-width: 767px){
+    .main .restaurant-medals{
+        padding: 0 0 50px 0;
+    }
+}
+/* end restaurant medals */
 /* end main */
