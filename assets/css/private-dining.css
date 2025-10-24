@@ -66,4 +66,85 @@
     }
 }
 /* end book event section */
+/* start plan a party section */
+.main .plan-a-party{
+    padding-bottom: 100px;
+}
+.main .plan-a-party .plan-a-party-description span, .main .plan-a-party .plan-a-party-description p{
+    font-family: var(--secondfont);
+    color: var(--white2);
+}
+.main .plan-a-party .plan-a-party-description span{
+    color: var(--maincolor);
+    font-size: 14px;
+    font-weight: 600;
+}
+.main .plan-a-party .plan-a-party-description h2{
+    font-size: 56px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    color: var(--white2);
+}
+.main .plan-a-party .plan-a-party-description p{
+    font-size: 18px;
+}
+.main .plan-a-party .plan-a-party-description .party-details{}
+.main .plan-a-party .plan-a-party-description .party-details p{
+    font-size: 16px;
+    position: relative;
+    margin-bottom: 7px;
+}
+.main .plan-a-party .plan-a-party-description .party-details p span{
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--maincolor);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.main .plan-a-party .plan-a-party-img{
+    transform: translateY(0);
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: SlideUp;
+    animation-duration: 2s;
+}
+.main .plan-a-party .plan-a-party-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width: 1399.5px) {
+    .main .plan-a-party .plan-a-party-description h2{
+        font-size: 46px;
+    }
+}
+@media screen and (max-width: 1199.5px) {
+    .main .plan-a-party{
+        padding-bottom: 70px;
+    }
+    .main .plan-a-party .plan-a-party-description h2{
+        font-size: 38px;
+    }
+    .main .plan-a-party .plan-a-party-description p{
+        font-size: 16px;
+    }
+    .main .plan-a-party .plan-a-party-description span, .main{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 439.5px) {
+    .main .plan-a-party .plan-a-party-description h2{
+        font-size: 34px;
+    }
+    .main .plan-a-party .plan-a-party-description span{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 343.5px) {
+    .main .plan-a-party .plan-a-party-description h2{
+        font-size: 30px;
+    }
+}
+/* end plan a party section */
 /* end main */
