@@ -1,0 +1,8 @@
+/* start main */
+/* start hero section */
+.main .hero-section{
+    height: 90vh;
+    background: var(--shadowBlack2) url("./../images/private-dining-page/private-dining-background.webp") no-repeat 60% 60%;
+}
+/* end hero section */
+/* end main */
