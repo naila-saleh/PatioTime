@@ -293,7 +293,13 @@
 .main .classic-flavor{
     padding-top: 100px;
 }
-.main .classic-flavor .classic-flavor-images{}
+.main .classic-flavor .classic-flavor-images{
+    transform: translateY(0);
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: SlideUp;
+    animation-duration: 2s;
+}
 .main .classic-flavor .classic-flavor-images .classic-flavor-image{}
 .main .classic-flavor .classic-flavor-description{}
 .main .classic-flavor .classic-flavor-description span, .main .classic-flavor .classic-flavor-description p, .main .classic-flavor .classic-flavor-description a{
@@ -367,7 +373,13 @@
 .main .award-winning-wines{
     padding: 100px 0;
 }
-.main .award-winning-wines .wines-images{}
+.main .award-winning-wines .wines-images{
+    transform: translateY(0);
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: SlideUp;
+    animation-duration: 2s;
+}
 .main .award-winning-wines .wines-images .wines-image{}
 .main .award-winning-wines .wines-description{}
 .main .award-winning-wines .wines-description span, .main .award-winning-wines .wines-description p, .main .award-winning-wines .wines-description a{
