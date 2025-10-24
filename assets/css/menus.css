@@ -1,8 +1,11 @@
 /* start main */
+.main{
+    background-color: var(--black2);
+}
 /* start hero section */
 .main .hero-section{
     background-blend-mode: darken;
-    height: 100vh;
+    height: 90vh;
     margin-top: -140px;
     padding: 260px;
     background-size: cover;
@@ -72,4 +75,87 @@
     }
 }
 /* end hero section */
+/* start restaurant menus */
+.main .restaurant-menus{
+    margin: 100px 0;
+    background-blend-mode: darken;
+    background: var(--shadowBlack3) url("./../images/menus-page/menus-list-background.webp") no-repeat 100% 100%;
+    background-position: right bottom;
+    background-size: auto 65%;
+}
+.main .restaurant-menus .row{
+    --bs-gutter-y: 0;
+}
+.main .restaurant-menus .menu-list{}
+.main .restaurant-menus .menu-list h2{
+    color: var(--maincolor);
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    border-bottom: 1px solid var(--maincolor);
+    border-top: 1px solid var(--maincolor);
+    opacity: 0.8;
+}
+.main .restaurant-menus .menu-list .menu-list-item{}
+.main .restaurant-menus .menu-list .menu-list-item .menu-title{}
+.main .restaurant-menus .menu-list .menu-list-item .menu-title h3{
+    font-size: 22px;
+    color: var(--shadowWhite);
+}
+.main .restaurant-menus .menu-list .menu-list-item .menu-title span{
+    color: var(--maincolor);
+    font-size: 22px;
+}
+.main .restaurant-menus .menu-list .menu-list-item p{
+    font-family: var(--secondfont);
+    color: var(--shadowWhite4);
+    font-size: 15px;
+}
+@media screen and (max-width: 1360px) {
+    .main .restaurant-menus{
+        background-size: auto 60%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .main .restaurant-menus{
+        background-size: auto 55%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .main .restaurant-menus{
+        background-size: auto 50%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .main .restaurant-menus{
+        background-size: auto 45%;
+    }
+}
+@media screen and (max-width: 991.5px) {
+    .main .restaurant-menus{
+        background-size: auto 30%;
+        margin: 60px 0;
+        padding-bottom: 250px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main .restaurant-menus{
+        background-size: auto 25%;
+    }
+}
+@media screen and (max-width: 575.5px) {
+    .main .restaurant-menus{
+        background-size: auto 20%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .main .restaurant-menus{
+        background-size: auto 15%;
+    }
+}
+@media screen and (max-width: 330px) {
+    .main .restaurant-menus{
+        background-size: auto 13%;
+    }
+}
+/* end restaurant menus */
 /* end main */
