@@ -5,4 +5,65 @@
     background: var(--shadowBlack2) url("./../images/private-dining-page/private-dining-background.webp") no-repeat 60% 60%;
 }
 /* end hero section */
+/* start book event section */
+.main .book-event{
+    padding: 100px 0;
+}
+.main .book-event h2{
+    font-size: 60px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    color: var(--white2);
+}
+.main .book-event p{
+    font-size: 18px;
+    font-family: var(--secondfont);
+    color: var(--shadowWhite);
+    font-weight: 500;
+}
+.main .book-event button{
+    font-family: var(--secondfont);
+    border-radius: 0;
+    padding: 8px 30px;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+.main .book-event .button-menu button{
+    color: var(--maincolor);
+    background-color: transparent;
+    border: 2px solid var(--maincolor);
+    transition: all 0.3s;
+}
+.main .book-event .button-menu button:hover{
+    color: var(--black);
+    background-color: var(--maincolor);
+}
+@media (max-width: 598px) {
+    .main .book-event .button-menu button{
+        padding: 7px 15px !important;
+    }
+}
+@media (max-width: 768px) {
+    .main .book-event h2 {
+        font-size: 50px;
+    }
+}
+@media (max-width: 540px) {
+    .main .book-event{
+        padding: 60px 0;
+    }
+    .main .book-event h2 {
+        font-size: 38px;
+    }
+}
+@media (max-width: 400px) {
+    .main .book-event h2 {
+        font-size: 30px;
+    }
+    .main .book-event p {
+        font-size: 16px;
+    }
+}
+/* end book event section */
 /* end main */
