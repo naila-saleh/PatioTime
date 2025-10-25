@@ -1,0 +1,86 @@
+.account{
+    height: 100vh;
+}
+.account .account-form{
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid var(--maincolor);
+}
+.account .account-form .form-element{
+    border: none;
+    border-bottom: 1px solid var(--shadowWhite3) !important;
+    border-radius: 0;
+    padding-left: 0;
+}
+.account .account-form .form-element:active{
+    background-color: var(--black) !important;
+    color: var(--white2);
+}
+.account .account-form .form-element:-webkit-autofill,
+.account .account-form .form-element:-webkit-autofill:hover,
+.account .account-form .form-element:-webkit-autofill:focus,
+.account .account-form .form-element:-webkit-autofill:active{
+    -webkit-text-fill-color: var(--white2);
+    -webkit-box-shadow: 0 0 0 1000px var(--black) inset;
+    background-clip: content-box;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.account .account-form .form-element:focus{
+    box-shadow: none;
+    border-bottom: 1px solid var(--shadowWhite) !important;
+    background-color: var(--black) !important;
+    color: var(--white2);
+}
+.account .account-form .form-element::placeholder{
+    color: var(--shadowWhite3) !important;
+    font-family: var(--secondfont);
+}
+.account .account-form .form-element option{
+    background-color: var(--black);
+}
+.account .account-form label, .account .account-form .btn, .account .account-form p{
+    font-family: var(--secondfont);
+}
+.account .account-form label{
+    color: var(--maincolor);
+}
+.account .account-form .btn{
+    background-color: var(--darkMaincolor);
+    color: var(--white);
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+    padding: 10px 30px;
+    font-weight: 600;
+}
+.account .account-form p a{
+    transition: all 0.3s ease-out;
+}
+.account .account-form p a:hover{
+    color: var(--maincolor);
+}
+@media screen and (max-width: 1400px) {
+    .account .account-form{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .account .account-form{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .account .account-form{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 767.5px) {
+    .account .account-form{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 575.5px) {
+    .account .account-form{
+        width: 90%;
+    }
+}
