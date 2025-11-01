@@ -25,4 +25,33 @@
     }
 }
 /* end hero section */
+/* start menus section */
+.main .menus span{
+    font-size: 14px;
+    font-family: var(--secondfont);
+    color: var(--maincolor);
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+.main .menus h2{
+    font-size: 56px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    color: var(--white2);
+}
+.main .menus .menu h3{
+    font-size: 21px;
+    letter-spacing: 0.1em;
+}
+@media screen and (max-width: 900px) {
+    .main .menus h2{
+        font-size: 48px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .main .menus h2{
+        font-size: 40px;
+    }
+}
+/* end menus section */
 /* end main */
