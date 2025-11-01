@@ -57,6 +57,10 @@
     transform: scaleX(1);
     transform-origin: left;
 }
+.header .navbar .navbar-nav .nav-item .nav-link{
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+}
 @media (max-width: 768px) {
     .header-info{
         display: none;
@@ -667,6 +671,9 @@
     }
     .main .restaurant-instructions .about-items .about-item{
         padding-left: 5%;
+    }
+    .main .restaurant-instructions .dress-code-col{
+        margin-left: 0;
     }
     .main .restaurant-instructions .dress-code-col .dress-code{
         width: 90%;
