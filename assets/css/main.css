@@ -22,6 +22,8 @@
     font-family: var(--secondfont);
 }
 .header .main-navbar{
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .header .navbar .navbar-nav a, .header .navbar .navbar-nav .dropdown-menu a{
     position: relative;
